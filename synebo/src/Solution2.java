@@ -14,7 +14,7 @@ public class Solution2 {
         a=a/t.length;// Среднее Значение Температуры(СЗТ) с лужит точкой перехода от зимы к лету
         System.out.println("Temperature: ");
 
-        if(t.length < 1 ){
+        if(t.length < 2 ){
             s=t.length+1;
         for (int i = 0; i < s; i++)
         {
