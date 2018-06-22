@@ -14,11 +14,13 @@ public class Solution2 {
         a=a/t.length;// Среднее Значение Температуры(СЗТ) с лужит точкой перехода от зимы к лету
         System.out.println("Temperature: ");
 
-        if(t.length < 2 ){
-            s=t.length+1;
+        if(s < 2 ){
+            System.out.println("Array is to short");
+        }
+        else if (s >= 2 & s <= 300000){
         for (int i = 0; i < s; i++)
         {
-            System.out.print(t[i]+"\t");}
+            System.out.print(t[i]+" ");}
         System.out.println();
         c[0]=t[0];// так-как год начинается с зимы
         for (int i = 1; i < s; i++)
@@ -35,6 +37,6 @@ public class Solution2 {
         System.out.print("Days in winter:  ");
         System.out.println((b));
         }else if (t.length>300000){
-            System.out.println("Array is too big");}
+            System.out.println("Array is too long");}
     }
 }
